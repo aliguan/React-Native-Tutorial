@@ -48,26 +48,30 @@ export default class HelloWorld extends Component {
     };
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-         Hello World
-        </Text>
-        <Image source={pic} style= {{width: 193, height: 110}}/>
+      <Text style={styles.welcome}>
+       Hello World
+      </Text>
+      <Image source={pic} style= {{width: 193, height: 110}}/>
 
-        <SayHello name='Alice'/>
+      <SayHello name='Alice'/>
 
-        <Blink text='Hi! Im Blinking'/>
-      </View>
+      <Blink text='Hi! Im Blinking'/>
+      <View style={{ flex: 2, backgroundColor: 'powderblue'}}/>
+      <View style={{ flex: 2, backgroundColor: 'steelblue'}}/>
+     </View>
 
     );
   }
 }
 
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    // justifyContent: 'center',
+    // alignItems: 'center',
+    // backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
