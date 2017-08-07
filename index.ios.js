@@ -19,8 +19,17 @@ class Blink extends Component {
         this.state = {showText: true};
 
         setInterval(() => {
-            this.setState(previous )
-        })
+            this.setState( previousState => {
+                return { showText: !previousState.showText };
+            });
+        }, 500);
+    }
+
+    render() {
+        let display = this.state.showText ? this.props.text : ' ';
+        return (
+            <Text>{ display }</Text>
+        )
     }
 }
 
@@ -45,6 +54,8 @@ export default class HelloWorld extends Component {
         <Image source={pic} style= {{width: 193, height: 110}}/>
 
         <SayHello name='Alice'/>
+
+        <Blink text='Hi! Im Blinking'/>
       </View>
 
     );
