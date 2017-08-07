@@ -28,7 +28,7 @@ class Blink extends Component {
     render() {
         let display = this.state.showText ? this.props.text : ' ';
         return (
-            <Text>{ display }</Text>
+            <Text style={styles.red}>{ display }</Text>
         )
     }
 }
@@ -79,6 +79,10 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+  red: {
+      fontSize: 30,
+      color: '#903458',
+  }
 });
 
 AppRegistry.registerComponent('HelloWorld', () => HelloWorld);
