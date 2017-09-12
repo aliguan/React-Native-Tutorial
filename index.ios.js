@@ -47,10 +47,19 @@ export default class HelloWorld extends Component {
         uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
+        // Styles.welcome === how to implement styles
+        // <Text style={styles.welcome}>
+        //  Hello World
+        // </Text>
+        //
+        // <SayHello name='Alice'/>
+        //
+        // <Blink text='Hi! Im Blinking'/>
 
 
       <View style={{flex: 1, flexDirection: 'row'}}>
-          <View style={{ width: 50, height: 100, backgroundColor: 'powderblue'}}/>
+          <View style={{ width: 50, backgroundColor: 'powderblue'}}>
+
           <View style={{ width: 50, height: 50, backgroundColor: 'steelblue'}}/>
      </View>
 
@@ -59,7 +68,7 @@ export default class HelloWorld extends Component {
 }
 
 
-
+// CSS for React
 const styles = StyleSheet.create({
   container: {
     flex: 1,
