@@ -47,17 +47,11 @@ export default class HelloWorld extends Component {
         uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg'
     };
     return (
-      <View style={styles.container}>
-      <Text style={styles.welcome}>
-       Hello World
-      </Text>
-      <Image source={pic} style= {{width: 193, height: 110}}/>
 
-      <SayHello name='Alice'/>
 
-      <Blink text='Hi! Im Blinking'/>
-      <View style={{ flex: 2, backgroundColor: 'powderblue'}}/>
-      <View style={{ flex: 2, backgroundColor: 'steelblue'}}/>
+      <View style={{flex: 1, flexDirection: 'row'}}>
+          <View style={{ width: 50, height: 100, backgroundColor: 'powderblue'}}/>
+          <View style={{ width: 50, height: 50, backgroundColor: 'steelblue'}}/>
      </View>
 
     );
@@ -72,6 +66,7 @@ const styles = StyleSheet.create({
     // justifyContent: 'center',
     // alignItems: 'center',
     // backgroundColor: '#F5FCFF',
+    flexDirection: 'row',
   },
   welcome: {
     fontSize: 20,
